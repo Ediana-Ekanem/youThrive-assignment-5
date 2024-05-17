@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+
+    <!-- Google Fonts  end-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts ends -->
+
+    <!-- Js Links Starts -->
+    <script src="./js/table.js" defer></script>
+    <!-- Js Links Ends -->
+
+    <!-- Font Awesome Starts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Awesome Ends -->
+
+    <title>Employees</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">hello</div>
+      <div class="main-content">
+        <div class="menu pad-container">
+          <div class="menu-box-one">
+            <img src="./assets/icons/search-icon.svg" alt="" />
+            <p>Search anything here</p>
+          </div>
+          <div class="menu-box-two">
+            <div>
+              <img src="./assets/icons/settings-icon.svg" alt="" />
+            </div>
+            <div>
+              <img src="./assets/icons/bell-icon.svg" alt="" />
+            </div>
+            <div>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="pad-container">
+          <div class="sub-menu">
+            <div class="sub-menu-box1">
+              <p>Employees</p>
+              <div>
+                <img src="./assets/icons/help-circle.svg" alt="" />
+              </div>
+              <div class="badge">
+                <img src="./assets/icons/Badge.svg" alt="" />
+              </div>
+            </div>
+            <div class="sub-menu-box2">
+              <div class="export">
+                <button class="btn1">
+                  <img src="./assets/icons/downlaod-icon.svg" alt="" />
+                  <p>Export</p>
+                </button>
+              </div>
+              <div class="new-employee">
+                <button class="btn2">
+                  <img src="./assets/icons/add-icon.svg" alt="" />
+                  <p>New Employee</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="employee-section">
+            <ul>
+              <li class="active"><span>All Employees</span></li>
+              <li class="active"><span>Teams</span></li>
+              <li class="active"><span>Roles</span></li>
+            </ul>
+
+            <div class="input-filter">
+              <div class="box1">
+                <div>
+                  <img src="./assets/icons/search-icon.svg" alt="" />
+                </div>
+                <div>
+                  <p>
+                    Search Employee by name, role,ID or any related keywords
+                  </p>
+                </div>
+              </div>
+              <div class="box2">
+                <button class="filter">
+                  <img src="./assets/icons/filter-icon.svg" alt="" />
+                  <p>Filter</p>
+                </button>
+                <button class="edit">
+                  <img src="./assets/icons/edit-icon.svg" alt="" />
+                </button>
+                <button class="linear">
+                  <img src="./assets/icons/linear-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <!-- table starts here -->
+            <section class="field">
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="name">
+                        <input type="checkbox" name="" id="selectAll" />Name
+                      </div>
+                    </th>
+                    <th>Employee ID</th>
+                    <th>
+                      <div class="role">
+                        <p>Role</p>
+                        <img
+                          src="./assets/icons/role-icon.svg"
+                          alt="role-icon"
+                        />
+                      </div>
+                    </th>
+                    <th>Status</th>
+                    <th>Teams</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Backend Developer</p>
+                        <p class="contract">Full Time</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/markating-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus1-cion.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name2-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Senior Chef</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus1-cion.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name3-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Junior Technical Author</p>
+                        <p class="contract">Full Time</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name2-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Senior Javascript Developer</p>
+                        <p class="contract">Full Time</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/engineering-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Accountant</p>
+                        <p class="contract">Associate</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus3-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name3-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/engineering-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Sales Assistant</p>
+                        <p class="contract">Full Time</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus6-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Assistant Lecturer</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name2-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Assistant Lecturer</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Senior Chef</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Senior Chef</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="inactive">
+                      <img
+                        src="./assets/icons/inactive-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Senior Chef</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Senior Chef</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td class="active">
+                      <img
+                        src="./assets/icons/active-icon.svg"
+                        alt="inactivei-con"
+                      />
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <img
+                            class="marketing"
+                            src="./assets/icons/product-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="design"
+                            src="./assets/icons/design-icon.svg"
+                            alt=""
+                          />
+                          <img
+                            class="plus1"
+                            src="./assets/icons/plus4-icon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="bottom-field">
+                <ul class="pagination">
+                  <li class="prev">
+                    <a href="#" id="prev">
+                      <i class="fa-solid fa-arrow-left"></i> Previous
+                    </a>
+                  </li>
+                  <!-- page number here -->
+                  <li class="next">
+                    <a href="#" id="next">
+                      Next <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque
+              accusantium dicta, deserunt asperiores itaque adipisci non
+              delectus nesciunt perferendis corporis et optio aspernatur
+              pariatur. Quia repellendus a pariatur perferendis? Rem pariatur ad
+              aliquid consectetur nam, blanditiis harum temporibus nihil debitis
+              et minus officia cum tempora sapiente officiis dolor delectus
+              ratione illo, atque incidunt, mollitia maxime facere! Unde, illum
+              dolorum. Soluta atque, commodi error, nostrum architecto qui
+              voluptatibus at vitae hic optio dolore modi libero eius et
+              exercitationem non laboriosam animi nulla voluptatem reprehenderit
+              autem. Voluptatum debitis odit saepe voluptate? Natus, eaque, sint
+              facere reiciendis voluptates perferendis recusandae illum quasi
+              aliquam, tenetur temporibus autem alias. Illum distinctio fuga
+              excepturi, odit consequatur, repellat earum, ad eum unde
+              dignissimos placeat error saepe? Mollitia inventore maiores autem
+              repellendus reiciendis cupiditate voluptatem voluptas dolorem
+              suscipit, debitis quo ab, harum iusto sunt blanditiis molestiae
+              quam ut sed quidem fugit, tempore accusantium possimus? Dolorem,
+              veritatis praesentium.
+            </p>
+
+            <!-- table ends here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

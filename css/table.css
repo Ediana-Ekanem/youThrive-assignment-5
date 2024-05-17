@@ -1,0 +1,190 @@
+.field {
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 10px !important;
+  font-family: Inter;
+}
+/* Existing styles in table.css */
+
+/* Add the corrected code below this line */
+
+table {
+  width: 100%;
+  margin: 2px auto;
+  color: #42526d;
+  background-color: #ffff;
+  border-spacing: 0;
+  border: #eff1f4 solid 1px;
+  border-radius: 10px;
+  table-layout: auto; /* Changed from 'auto' to 'fixed' */
+}
+
+table tr th,
+td {
+  padding: 10px;
+  border-top: #eff1f4 solid 1px;
+  border-bottom: #eff1f4 solid 1px;
+  /* Removed border-top and border-bottom from 'tr, td' */
+}
+
+/* Added 'border-collapse: collapse;' for improved border rendering */
+table {
+  border-collapse: collapse;
+}
+
+/* Existing styles continue below this line */
+
+tr,
+td {
+  border-top: #eff1f4 solid 1px;
+  border-bottom: #eff1f4 solid 1px;
+}
+
+.bottom-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  height: 40px;
+}
+
+.pagination li {
+  list-style: none;
+  padding: 3px 8px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #999;
+  color: #999;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.pagination li.active {
+  background: #32d6aa;
+  color: white;
+  border: 1px solid #32d6aa;
+  outline: none;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+/* Add hover styles */
+.pagination li:hover {
+  border: 1px solid #32d6aa;
+  color: #32d6aa;
+  box-sizing: border-box;
+}
+
+.pagination li a i {
+  padding: 3px;
+}
+
+.pagination li.prev {
+  margin-right: auto;
+}
+
+.pagination li.next {
+  margin-left: auto;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.name img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.name div .full-name {
+  color: black;
+  font-weight: 600;
+}
+.name div .email {
+  color: #6b788e;
+  font-size: 9px;
+}
+
+.role {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.role img {
+  width: 12px;
+}
+.role-data .contract {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #8993a4;
+}
+
+.active img {
+  width: 50px;
+  object-fit: cover;
+}
+.inactive img {
+  width: 55px;
+  object-fit: cover;
+}
+
+.flex-teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.flex-teams .box1 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.flex-teams .marketing {
+  width: 50px;
+  object-fit: cover;
+}
+.flex-teams .design {
+  width: 40px;
+  object-fit: cover;
+}
+.flex-teams .plus1 {
+  width: 20px;
+  object-fit: cover;
+}
+.flex-teams .box2 img {
+  width: 15px;
+  object-fit: cover;
+}
+.employee-id {
+  background-color: #f5f6f7;
+  border-radius: 7px;
+}
+
+.employee-id p {
+  color: #091e42;
+  font-family: Inter;
+  font-size: 9px;
+  line-height: 18px;
+  text-align: center;
+}
