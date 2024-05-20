@@ -139,13 +139,67 @@ td {
   color: #8993a4;
 }
 
-.active img {
-  width: 50px;
-  object-fit: cover;
+.my-active {
+  background-color: #ecfdf3;
+  border-radius: 10px;
+  color: #2b9166;
+  border: none;
+  padding: 3px 6px;
+  font-size: 9px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.inactive img {
-  width: 55px;
-  object-fit: cover;
+.my-active .fa-circle {
+  font-size: 5px;
+}
+
+.my-inactive {
+  background-color: #fff2ea;
+  border-radius: 10px;
+  color: #f26157;
+  border: none;
+  padding: 3px 6px;
+  font-size: 9px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.my-inactive .fa-circle {
+  font-size: 5px;
+}
+
+.marketing,
+.product,
+.engineering,
+.plus {
+  background-color: #f5f6f7;
+  font-family: inter;
+  border-radius: 10px;
+  color: black;
+  border: none;
+  padding: 3px 8px;
+  font-size: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.design {
+  background-color: #f7e8ef;
+  font-family: inter;
+  border-radius: 10px;
+  color: #7c2b50;
+  border: none;
+  padding: 3px 8px;
+  font-size: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .flex-teams {

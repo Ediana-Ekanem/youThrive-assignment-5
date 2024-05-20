@@ -23,6 +23,7 @@
 
     <!-- Js Links Starts -->
     <script src="./js/table.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <!-- Js Links Ends -->
 
     <!-- Font Awesome Starts -->
@@ -35,7 +36,6 @@
     />
 
     <!-- Font Awesome Ends -->
-
     <title>Employees</title>
   </head>
   <body>
@@ -44,8 +44,15 @@
       <div class="main-content">
         <div class="menu pad-container">
           <div class="menu-box-one">
-            <img src="./assets/icons/search-icon.svg" alt="" />
-            <p>Search anything here</p>
+            <form action="" class="input-form">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Search anything here"
+              />
+            </form>
           </div>
           <div class="menu-box-two">
             <div>
@@ -67,7 +74,7 @@
                 <img src="./assets/icons/help-circle.svg" alt="" />
               </div>
               <div class="badge">
-                <img src="./assets/icons/Badge.svg" alt="" />
+                <button class="number">100</button>
               </div>
             </div>
             <div class="sub-menu-box2">
@@ -86,23 +93,26 @@
             </div>
           </div>
           <div class="employee-section">
-            <ul>
-              <li class="active"><span>All Employees</span></li>
-              <li class="active"><span>Teams</span></li>
-              <li class="active"><span>Roles</span></li>
-            </ul>
+            <nav>
+              <ul>
+                <li>
+                  <a class="nav_link" href="./index.html">All Employees</a>
+                </li>
+                <li><a class="nav_link" href="./views/about.html">Teams</a></li>
+                <li><a class="nav_link" href="./views/roles.html">Roles</a></li>
+              </ul>
+            </nav>
 
             <div class="input-filter">
-              <div class="box1">
-                <div>
-                  <img src="./assets/icons/search-icon.svg" alt="" />
-                </div>
-                <div>
-                  <p>
-                    Search Employee by name, role,ID or any related keywords
-                  </p>
-                </div>
-              </div>
+              <form action="" class="input-form box1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder=" Search Employee by name, role,ID or any related keywords "
+                />
+              </form>
               <div class="box2">
                 <button class="filter">
                   <img src="./assets/icons/filter-icon.svg" alt="" />
@@ -166,31 +176,18 @@
                         <p class="contract">Full Time</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td class="">
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Inactive
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/markating-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus1-cion.svg"
-                            alt=""
-                          />
+                          <button class="marketing">Marketing</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+1</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -223,31 +220,18 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus1-cion.svg"
-                            alt=""
-                          />
+                          <button class="marketing">Marketing</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+1</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -280,21 +264,15 @@
                         <p class="contract">Full Time</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
-
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
+                          <button class="marketing">Marketing</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -327,25 +305,17 @@
                         <p class="contract">Full Time</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
+
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/engineering-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
+                          <button class="marketing">Marketing</button>
+                          <button class="design">Design</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -378,31 +348,18 @@
                         <p class="contract">Associate</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Inactive
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus3-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+3</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -435,26 +392,16 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Inactive
+                      </button>
                     </td>
-
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/engineering-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
+                          <button class="engineering">Engineering</button>
+                          <button class="design">Design</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -487,31 +434,18 @@
                         <p class="contract">Full Time</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus6-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -544,31 +478,18 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Inactive
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+4</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -601,31 +522,18 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Inactive
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+4</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -667,20 +575,53 @@
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+4</button>
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td>
+                      <button class="my-inactive">
+                        <i class="fa-solid fa-circle"></i>Inactive
+                      </button>
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                           />
                         </div>
                         <div class="box2">
@@ -714,31 +655,63 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
+                        </div>
+                        <div class="box2">
+                          <img src="./assets/icons/more-icon.svg" alt="" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="name">
+                        <input type="checkbox" />
+                        <img
+                          src="./assets/images/name1-avater.jpg"
+                          alt="avater"
+                        />
+                        <div>
+                          <p class="full-name">Tanner Finsha</p>
+                          <p class="email">@Tannerfisher@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="employee-id">
+                        <p>#23454GH6J7YT6</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="role-data">
+                        <p class="title">Integration Specialist</p>
+                        <p class="contract">Contract</p>
+                      </div>
+                    </td>
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
+                    </td>
+
+                    <td>
+                      <div class="flex-teams">
+                        <div class="box1">
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -771,31 +744,18 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -828,87 +788,18 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="box2">
-                          <img src="./assets/icons/more-icon.svg" alt="" />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="name">
-                        <input type="checkbox" />
-                        <img
-                          src="./assets/images/name1-avater.jpg"
-                          alt="avater"
-                        />
-                        <div>
-                          <p class="full-name">Tanner Finsha</p>
-                          <p class="email">@Tannerfisher@gmail.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="employee-id">
-                        <p>#23454GH6J7YT6</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="role-data">
-                        <p class="title">Senior Chef</p>
-                        <p class="contract">Contract</p>
-                      </div>
-                    </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
-                    </td>
-                    <td>
-                      <div class="flex-teams">
-                        <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -941,31 +832,18 @@
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -994,35 +872,22 @@
                     </td>
                     <td>
                       <div class="role-data">
-                        <p class="title">Senior Chef</p>
+                        <p class="title">Integration Specialist</p>
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="inactive">
-                      <img
-                        src="./assets/icons/inactive-icon.svg"
-                        alt="inactivei-con"
-                      />
+                    <td>
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -1051,91 +916,22 @@
                     </td>
                     <td>
                       <div class="role-data">
-                        <p class="title">Senior Chef</p>
+                        <p class="title">Integration Specialist</p>
                         <p class="contract">Contract</p>
                       </div>
                     </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
-                    </td>
                     <td>
-                      <div class="flex-teams">
-                        <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="box2">
-                          <img src="./assets/icons/more-icon.svg" alt="" />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="name">
-                        <input type="checkbox" />
-                        <img
-                          src="./assets/images/name1-avater.jpg"
-                          alt="avater"
-                        />
-                        <div>
-                          <p class="full-name">Tanner Finsha</p>
-                          <p class="email">@Tannerfisher@gmail.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="employee-id">
-                        <p>#23454GH6J7YT6</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="role-data">
-                        <p class="title">Senior Chef</p>
-                        <p class="contract">Contract</p>
-                      </div>
-                    </td>
-                    <td class="active">
-                      <img
-                        src="./assets/icons/active-icon.svg"
-                        alt="inactivei-con"
-                      />
+                      <button class="my-active">
+                        <i class="fa-solid fa-circle"></i>Active
+                      </button>
                     </td>
 
                     <td>
                       <div class="flex-teams">
                         <div class="box1">
-                          <img
-                            class="marketing"
-                            src="./assets/icons/product-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="design"
-                            src="./assets/icons/design-icon.svg"
-                            alt=""
-                          />
-                          <img
-                            class="plus1"
-                            src="./assets/icons/plus4-icon.svg"
-                            alt=""
-                          />
+                          <button class="product">Product</button>
+                          <button class="design">Design</button>
+                          <button class="plus">+6</button>
                         </div>
                         <div class="box2">
                           <img src="./assets/icons/more-icon.svg" alt="" />
@@ -1161,29 +957,6 @@
                 </ul>
               </div>
             </section>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque
-              accusantium dicta, deserunt asperiores itaque adipisci non
-              delectus nesciunt perferendis corporis et optio aspernatur
-              pariatur. Quia repellendus a pariatur perferendis? Rem pariatur ad
-              aliquid consectetur nam, blanditiis harum temporibus nihil debitis
-              et minus officia cum tempora sapiente officiis dolor delectus
-              ratione illo, atque incidunt, mollitia maxime facere! Unde, illum
-              dolorum. Soluta atque, commodi error, nostrum architecto qui
-              voluptatibus at vitae hic optio dolore modi libero eius et
-              exercitationem non laboriosam animi nulla voluptatem reprehenderit
-              autem. Voluptatum debitis odit saepe voluptate? Natus, eaque, sint
-              facere reiciendis voluptates perferendis recusandae illum quasi
-              aliquam, tenetur temporibus autem alias. Illum distinctio fuga
-              excepturi, odit consequatur, repellat earum, ad eum unde
-              dignissimos placeat error saepe? Mollitia inventore maiores autem
-              repellendus reiciendis cupiditate voluptatem voluptas dolorem
-              suscipit, debitis quo ab, harum iusto sunt blanditiis molestiae
-              quam ut sed quidem fugit, tempore accusantium possimus? Dolorem,
-              veritatis praesentium.
-            </p>
-
             <!-- table ends here -->
           </div>
         </div>

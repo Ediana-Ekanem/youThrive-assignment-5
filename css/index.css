@@ -37,18 +37,32 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  height: 100%;
+  width: 60%;
 }
-.menu-box-one img {
-  width: 1rem;
+
+.input-form {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.menu-box-one p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.12px;
-  text-align: center;
-  color: #333333;
+.input-form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
 }
+.input-form input::placeholder {
+  color: black;
+}
+.input-form .fa-magnifying-glass {
+  color: #687186;
+  font-size: 1rem;
+}
+
 .menu-box-two {
   display: flex;
 }
@@ -72,6 +86,10 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.box1 input::placeholder {
+  font-size: 10px;
 }
 
 .sub-menu p {
@@ -130,12 +148,16 @@
   width: 1.3rem;
 }
 
-.employee-section > ul {
+.employee-section > nav ul {
   display: flex;
   gap: 10px;
   list-style-type: none;
-  /* padding-bottom: 0.5rem; */
   border-bottom: 1px solid #e6e7ec;
+}
+
+.employee-section > nav ul li a {
+  text-decoration: none;
+  color: #9ca3b0;
 }
 
 .employee-section li {
@@ -149,10 +171,10 @@
   padding-bottom: 1rem;
 }
 
-.employee-section li:hover {
-  border-bottom: 2px solid #6a1039;
-  color: #6a1039;
-  padding-bottom: 0.5rem;
+.active-link {
+  border-bottom: 1.7px solid #6a1039;
+  color: #6a1039 !important;
+  padding-bottom: 1.1rem;
 }
 
 .input-filter {
@@ -161,6 +183,7 @@
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -187,7 +210,10 @@
   display: flex;
   gap: 3px;
   align-items: center;
-  padding: 0 5px;
+  justify-content: center;
+  width: 3.5rem;
+  height: 1.8rem;
+  /* padding: 0 5px; */
   background: white;
   border: 1px solid #e6e7ec;
   border-radius: 3px;
@@ -198,17 +224,33 @@
 
 .box2 .edit {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 4px 8px;
+  padding: 2px 4px;
   border: none;
   border-radius: 3px;
+  width: 2rem;
+  height: 1.8rem;
 }
 .box2 .linear {
   display: flex;
   align-items: center;
-  padding: 2px 6px;
+  justify-content: center;
+  padding: 2px 4px;
   border: none;
   border-radius: 3px;
   background-color: white;
   border: 1px solid #e6e7ec;
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.number {
+  border-radius: 10px;
+  color: #6a1039;
+  background-color: #f9f5ff;
+  border: none;
+  padding: 5px 8px;
+  font-size: 10px;
+  font-weight: 600;
 }

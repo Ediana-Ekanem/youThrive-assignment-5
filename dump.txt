@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/table.css" />
 
     <!-- Google Fonts  end-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +22,6 @@
 
     <!-- Js Links Starts -->
     <script src="../js/main.js" defer></script>
-    <script src="../js/table.js" defer></script>
     <!-- Js Links Ends -->
 
     <!-- Font Awesome Starts -->
@@ -36,7 +34,7 @@
     />
 
     <!-- Font Awesome Ends -->
-    <title>Roles Page</title>
+    <title>Employees</title>
   </head>
   <body>
     <div class="container">
@@ -74,20 +72,20 @@
                 <img src="../assets/icons/help-circle.svg" alt="" />
               </div>
               <div class="badge">
-                <button class="number">123</button>
+                <img src="../assets/icons/Badge.svg" alt="" />
               </div>
             </div>
             <div class="sub-menu-box2">
               <div class="export">
                 <button class="btn1">
                   <img src="../assets/icons/downlaod-icon.svg" alt="" />
-                  <p>Assign</p>
+                  <p>Export</p>
                 </button>
               </div>
               <div class="new-employee">
                 <button class="btn2">
                   <img src="../assets/icons/add-icon.svg" alt="" />
-                  <p>New Role</p>
+                  <p>New Employee</p>
                 </button>
               </div>
             </div>
@@ -96,7 +94,7 @@
             <nav>
               <ul>
                 <li>
-                  <a class="nav_link" href="">All roles</a>
+                  <a class="nav_link" href="./index.html">All Roles</a>
                 </li>
                 <li>
                   <a class="nav_link" href="./views/about.html">Permissions</a>
@@ -127,10 +125,11 @@
                 </button>
               </div>
             </div>
+
+            <!-- table ends here -->
           </div>
         </div>
       </div>
-      .
     </div>
   </body>
 </html>
