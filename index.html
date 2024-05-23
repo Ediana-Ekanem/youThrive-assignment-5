@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- My Css  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <!-- My Css  -->
 
     <!-- Google Fonts  end-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +27,7 @@
     <!-- Js Links Starts -->
     <script src="./js/table.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/sidebar.js" defer></script>
     <!-- Js Links Ends -->
 
     <!-- Font Awesome Starts -->
@@ -36,11 +40,104 @@
     />
 
     <!-- Font Awesome Ends -->
-    <title>Employees</title>
+    <title>Employees Page</title>
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">hello</div>
+      <div class="sidebar">
+        <nav class="nav">
+          <div class="navbar-divider">
+            <div class="sidebar-brand">
+              <img src="./assets/icons/logo.svg" alt="Logo" />
+              <h2>Aerten</h2>
+            </div>
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/home.svg" alt="Home Icon" />
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="./views/roles.html">
+                  <img
+                    src="./assets/icons/briefcase.svg"
+                    alt="Briefcase Icon"
+                  />
+                  <span>Roles</span>
+                </a>
+              </li>
+              <li class="select-menu">
+                <div class="select-btn">
+                  <a href="#">
+                    <svg
+                      class="hover-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="#b7bec8"
+                        d="M244.8 150.4a8 8 0 0 1-11.2-1.6A51.6 51.6 0 0 0 192 128a8 8 0 0 1-7.37-4.89a8 8 0 0 1 0-6.22A8 8 0 0 1 192 112a24 24 0 1 0-23.24-30a8 8 0 1 1-15.5-4A40 40 0 1 1 219 117.51a67.94 67.94 0 0 1 27.43 21.68a8 8 0 0 1-1.63 11.21M190.92 212a8 8 0 1 1-13.84 8a57 57 0 0 0-98.16 0a8 8 0 1 1-13.84-8a72.06 72.06 0 0 1 33.74-29.92a48 48 0 1 1 58.36 0A72.06 72.06 0 0 1 190.92 212M128 176a32 32 0 1 0-32-32a32 32 0 0 0 32 32m-56-56a8 8 0 0 0-8-8a24 24 0 1 1 23.24-30a8 8 0 1 0 15.5-4A40 40 0 1 0 37 117.51a67.94 67.94 0 0 0-27.4 21.68a8 8 0 1 0 12.8 9.61A51.6 51.6 0 0 1 64 128a8 8 0 0 0 8-8"
+                      />
+                    </svg>
+
+                    <span class="inner-text">Employees</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </a>
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <a href="#">
+                      <img src="./assets/icons/_Dot.svg" alt="Dot Icon" />
+                      <span class="text">All Employees</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <img src="./assets/icons/_Dot.svg" alt="Dot Icon" />
+                      <span class="text">Recent Hires</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/icons/receipt-item.svg"
+                    alt="Receipt Icon"
+                  />
+                  <span>Payroll</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/icons/Chart_Pie.svg"
+                    alt="Chart Pie Icon"
+                  />
+                  <span>Report</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/Settings.svg" alt="Settings Icon" />
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="logout-border">
+            <li>
+              <a href="#">
+                <img src="./assets/icons/Logout.svg" alt="Logout Icon" />
+                <span>Logout</span>
+              </a>
+            </li>
+          </div> -->
+        </nav>
+      </div>
       <div class="main-content">
         <div class="menu pad-container">
           <div class="menu-box-one">
@@ -962,5 +1059,8 @@
         </div>
       </div>
     </div>
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
 </html>

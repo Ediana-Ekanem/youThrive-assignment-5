@@ -10,18 +10,18 @@
 
 .container {
   display: flex;
+  position: relative;
+  /* padding: 20px; */
 }
 
 .sidebar {
   flex: 1;
   background-color: white;
   border: 1px solid #eff1f4;
-  height: 100vh;
 }
 
 .main-content {
   flex: 4;
-  height: 100vh;
 }
 
 .menu {
@@ -162,7 +162,7 @@
 
 .employee-section li {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 20px;
   text-align: left;
@@ -174,7 +174,7 @@
 .active-link {
   border-bottom: 1.7px solid #6a1039;
   color: #6a1039 !important;
-  padding-bottom: 1.1rem;
+  padding-bottom: 1.2rem;
 }
 
 .input-filter {

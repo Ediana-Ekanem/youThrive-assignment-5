@@ -16,7 +16,7 @@ table {
   border-spacing: 0;
   border: #eff1f4 solid 1px;
   border-radius: 10px;
-  table-layout: auto; /* Changed from 'auto' to 'fixed' */
+  height: inherit;
 }
 
 table tr th,

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/table.css" />
+    <link rel="stylesheet" href="../css/role.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
 
     <!-- Google Fonts  end-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,11 +22,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Google Fonts ends -->
 
     <!-- Js Links Starts -->
     <script src="../js/main.js" defer></script>
     <script src="../js/table.js" defer></script>
+    <script src="../js/modal..js" defer></script>
+
     <!-- Js Links Ends -->
 
     <!-- Font Awesome Starts -->
@@ -40,7 +52,92 @@
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">hello</div>
+      <div class="sidebar">
+        <nav class="nav">
+          <div class="navbar-divider">
+            <div class="sidebar-brand">
+              <img src="../assets/icons/logo.svg" alt="Logo" />
+              <h2>Aerten</h2>
+            </div>
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#">
+                  <img src="../assets/icons/home.svg" alt="Home Icon" />
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../assets/icons/briefcase.svg"
+                    alt="Briefcase Icon"
+                  />
+                  <span>Roles</span>
+                </a>
+              </li>
+              <li class="select-menu">
+                <div class="select-btn">
+                  <a href="../index.html">
+                    <img
+                      class="img-1"
+                      src="../assets/icons/3 User.svg"
+                      alt="Users Icon"
+                    />
+                    <span>Employees</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </a>
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <a href="#">
+                      <img src="../assets/icons/_Dot.svg" alt="Dot Icon" />
+                      <span class="text">All Employees</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <img src="../assets/icons/_Dot.svg" alt="Dot Icon" />
+                      <span class="text">Recent Hires</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../assets/icons/receipt-item.svg"
+                    alt="Receipt Icon"
+                  />
+                  <span>Payroll</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../assets/icons/Chart_Pie.svg"
+                    alt="Chart Pie Icon"
+                  />
+                  <span>Report</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/icons/Settings.svg" alt="Settings Icon" />
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="logout-border">
+            <li>
+              <a href="#">
+                <img src="../assets/icons/Logout.svg" alt="Logout Icon" />
+                <span>Logout</span>
+              </a>
+            </li>
+          </div>
+        </nav>
+      </div>
       <div class="main-content">
         <div class="menu pad-container">
           <div class="menu-box-one">
@@ -78,9 +175,9 @@
               </div>
             </div>
             <div class="sub-menu-box2">
-              <div class="export">
+              <div class="export" id="show-modal">
                 <button class="btn1">
-                  <img src="../assets/icons/downlaod-icon.svg" alt="" />
+                  <img src="../assets/icons/assign-icon.svg" alt="" />
                   <p>Assign</p>
                 </button>
               </div>
@@ -127,10 +224,314 @@
                 </button>
               </div>
             </div>
+            <nav class="sub-role-menu">
+              <ul>
+                <li>
+                  <a class="nav_link" href="">All</a>
+                </li>
+                <li>
+                  <a class="nav_link" href="./views/about.html">Procuct</a>
+                </li>
+                <li>
+                  <a class="nav_link" href="./views/about.html">Engineering</a>
+                </li>
+                <li>
+                  <a class="nav_link" href="./views/about.html">Marketing</a>
+                </li>
+                <li>
+                  <a class="nav_link" href="./views/about.html">Recruitment</a>
+                </li>
+                <li>
+                  <a class="nav_link" href="./views/about.html">Sales</a>
+                </li>
+
+                <li>
+                  <a class="nav_link" href="./views/about.html"
+                    >Customer Service</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="card-container">
+              <div class="grid-container">
+                <div class="card">
+                  <div class="card-title">
+                    <div class="box1">
+                      <h2>Solution Sales Specialist</h2>
+                    </div>
+                    <div class="box2">
+                      <img src="../assets/icons/group-img.svg" alt="" />
+                      <img src="../assets/icons/assign-icon.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                    <div class="flex-job">
+                      <button class="marketing">Marketing</button>
+                      <button class="product">Product</button>
+                      <button class="engineering">Engineering</button>
+                      <button class="design">Design</button>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="box1">
+                      <img src="../assets/icons/role-profile.svg" alt="" />
+                    </div>
+                    <div class="box2">
+                      <p class="title">James Campion</p>
+                      <p class="sub-title">Manager</p>
+                    </div>
+                    <div class="box3">
+                      <img src="../assets//icons/arrow-right.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-title">
+                    <div class="box1">
+                      <h2>Solution Sales Specialist</h2>
+                    </div>
+                    <div class="box2">
+                      <img src="../assets/icons/group-img.svg" alt="" />
+                      <img src="../assets/icons/assign-icon.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                    <div class="flex-job">
+                      <button class="marketing">Marketing</button>
+                      <button class="product">Product</button>
+                      <button class="engineering">Engineering</button>
+                      <button class="design">Design</button>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="box1">
+                      <img src="../assets/icons/role-profile.svg" alt="" />
+                    </div>
+                    <div class="box2">
+                      <p class="title">James Campion</p>
+                      <p class="sub-title">Manager</p>
+                    </div>
+                    <div class="box3">
+                      <img src="../assets//icons/arrow-right.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-title">
+                    <div class="box1">
+                      <h2>Solution Sales Specialist</h2>
+                    </div>
+                    <div class="box2">
+                      <img src="../assets/icons/group-img.svg" alt="" />
+                      <img src="../assets/icons/assign-icon.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                    <div class="flex-job">
+                      <button class="marketing">Marketing</button>
+                      <button class="product">Product</button>
+                      <button class="engineering">Engineering</button>
+                      <button class="design">Design</button>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="box1">
+                      <img src="../assets/icons/role-profile.svg" alt="" />
+                    </div>
+                    <div class="box2">
+                      <p class="title">James Campion</p>
+                      <p class="sub-title">Manager</p>
+                    </div>
+                    <div class="box3">
+                      <img src="../assets//icons/arrow-right.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-title">
+                    <div class="box1">
+                      <h2>Solution Sales Specialist</h2>
+                    </div>
+                    <div class="box2">
+                      <img src="../assets/icons/group-img.svg" alt="" />
+                      <img src="../assets/icons/assign-icon.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                    <div class="flex-job">
+                      <button class="marketing">Marketing</button>
+                      <button class="product">Product</button>
+                      <button class="engineering">Engineering</button>
+                      <button class="design">Design</button>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="box1">
+                      <img src="../assets/icons/role-profile.svg" alt="" />
+                    </div>
+                    <div class="box2">
+                      <p class="title">James Campion</p>
+                      <p class="sub-title">Manager</p>
+                    </div>
+                    <div class="box3">
+                      <img src="../assets//icons/arrow-right.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      .
+
+      <div class="modal-backdrop">
+        <div class="show-modal">
+          <div class="modal">
+            <div class="inner-modal">
+              <div class="modal-icon-round">
+                <img src="../assets/icons/modal-briefcase.svg" alt="" />
+              </div>
+              <h3>Assign this role</h3>
+              <p>
+                Select one or multiple employees to assign to this role “
+                <span class="text-color">Senior Design Lead </span> “
+              </p>
+              <div class="input-filter">
+                <form action="" class="input-form box1">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder=" Search for an indivdual or team"
+                  />
+                </form>
+                <div class="box2">
+                  <img src="../assets/icons/role-icon.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="profile-container">
+                <div class="profile-box profile-box-one">
+                  <div class="flex-profile-box">
+                    <div class="box-1">
+                      <div>
+                        <img src="../assets/images/modal-pic1.svg" alt="" />
+                      </div>
+                      <div>
+                        <p class="modal-title">Jennifer Lopez</p>
+                        <p>Product Designer, Integrations</p>
+                      </div>
+                    </div>
+                    <div class="box-2">
+                      <img src="../assets/icons/Checkbox.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="profile-box">
+                  <div class="flex-profile-box">
+                    <div class="box-1">
+                      <div>
+                        <img src="../assets/images/modal-pic2.svg" alt="" />
+                      </div>
+                      <div>
+                        <p class="modal-title">Jennifer Lopez</p>
+                        <p>Product Designer, Integrations</p>
+                      </div>
+                    </div>
+                    <div class="box-2">
+                      <img src="../assets/icons/unCheckbox.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-box">
+                  <div class="flex-profile-box">
+                    <div class="box-1">
+                      <div>
+                        <img src="../assets/images/modal-pic3.svg" alt="" />
+                      </div>
+                      <div>
+                        <p class="modal-title">Jennifer Lopez</p>
+                        <p>Product Designer, Integrations</p>
+                      </div>
+                    </div>
+                    <div class="box-2">
+                      <img src="../assets/icons/unCheckbox.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-box">
+                  <div class="flex-profile-box">
+                    <div class="box-1">
+                      <div>
+                        <img src="../assets/images/modal-pic4.svg" alt="" />
+                      </div>
+                      <div>
+                        <p class="modal-title">Jennifer Lopez</p>
+                        <p>Product Designer, Integrations</p>
+                      </div>
+                    </div>
+                    <div class="box-2">
+                      <img src="../assets/icons/unCheckbox.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-box">
+                  <div class="flex-profile-box">
+                    <div class="box-1">
+                      <div>
+                        <img src="../assets/images/modal-pic5.svg" alt="" />
+                      </div>
+                      <div>
+                        <p class="modal-title">Jennifer Lopez</p>
+                        <p>Product Designer, Integrations</p>
+                      </div>
+                    </div>
+                    <div class="box-2">
+                      <img src="../assets/icons/unCheckbox.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="close-modal">X</button>
+      </div>
     </div>
   </body>
 </html>
