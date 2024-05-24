@@ -174,7 +174,7 @@
 .active-link {
   border-bottom: 1.7px solid #6a1039;
   color: #6a1039 !important;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.1rem;
 }
 
 .input-filter {
@@ -259,14 +259,12 @@
 
 @media screen and (min-width: 1024px) {
   body,
-  p,
   h1,
   h2,
   h3,
   h4,
   h5,
   h6,
-  a,
   span,
   div,
   li,
@@ -276,5 +274,11 @@
     font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
+  }
+  a {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
   }
 }
