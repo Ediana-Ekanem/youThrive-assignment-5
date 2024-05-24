@@ -173,7 +173,8 @@ a:hover .hover-svg path {
   text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 20px;
+  /* justify-content: center; */
   color: black;
   gap: 5px;
 }
